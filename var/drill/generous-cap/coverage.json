@@ -1,0 +1,324 @@
+{
+  "version": 1,
+  "snapshot": "plot-1",
+  "snapshotInfo": {
+    "snapshot": "plot-1",
+    "cap": 30,
+    "domain": {
+      "xmin": 0,
+      "xmax": 4,
+      "ymin": 0,
+      "ymax": 4,
+      "from": 0,
+      "until": 4
+    },
+    "minSpatial": 0.25,
+    "minTemporal": 1
+  },
+  "strategy": {
+    "dimensionSelection": "largest-normalized-span",
+    "boundary": "closed-intervals-shared-boundary-with-id-dedup",
+    "order": [
+      "temporal",
+      "spatialX",
+      "spatialY"
+    ]
+  },
+  "budget": 40,
+  "requestsUsed": 2,
+  "complete": true,
+  "claimedComplete": true,
+  "snapshotValid": true,
+  "stopReason": "complete",
+  "records": [
+    {
+      "id": "OBS-00",
+      "x": 0,
+      "y": 0,
+      "time": 0,
+      "value": 0.1
+    },
+    {
+      "id": "OBS-01",
+      "x": 2,
+      "y": 0,
+      "time": 1,
+      "value": 1.1
+    },
+    {
+      "id": "OBS-02",
+      "x": 4,
+      "y": 0,
+      "time": 2,
+      "value": 2.1
+    },
+    {
+      "id": "OBS-03",
+      "x": 0,
+      "y": 2,
+      "time": 3,
+      "value": 3.1
+    },
+    {
+      "id": "OBS-04",
+      "x": 2,
+      "y": 2,
+      "time": 4,
+      "value": 4.1
+    },
+    {
+      "id": "OBS-05",
+      "x": 4,
+      "y": 2,
+      "time": 0,
+      "value": 5.1
+    },
+    {
+      "id": "OBS-06",
+      "x": 0,
+      "y": 4,
+      "time": 1,
+      "value": 6.1
+    },
+    {
+      "id": "OBS-07",
+      "x": 2,
+      "y": 4,
+      "time": 2,
+      "value": 7.1
+    },
+    {
+      "id": "OBS-08",
+      "x": 4,
+      "y": 4,
+      "time": 3,
+      "value": 8.1
+    },
+    {
+      "id": "OBS-09",
+      "x": 0,
+      "y": 0,
+      "time": 4,
+      "value": 9.1
+    },
+    {
+      "id": "OBS-10",
+      "x": 2,
+      "y": 0,
+      "time": 0,
+      "value": 10.1
+    },
+    {
+      "id": "OBS-11",
+      "x": 4,
+      "y": 0,
+      "time": 1,
+      "value": 11.1
+    },
+    {
+      "id": "OBS-12",
+      "x": 0,
+      "y": 2,
+      "time": 2,
+      "value": 12.1
+    },
+    {
+      "id": "OBS-13",
+      "x": 2,
+      "y": 2,
+      "time": 3,
+      "value": 13.1
+    },
+    {
+      "id": "OBS-14",
+      "x": 4,
+      "y": 2,
+      "time": 4,
+      "value": 14.1
+    },
+    {
+      "id": "OBS-15",
+      "x": 0,
+      "y": 4,
+      "time": 0,
+      "value": 15.1
+    },
+    {
+      "id": "OBS-16",
+      "x": 2,
+      "y": 4,
+      "time": 1,
+      "value": 16.1
+    },
+    {
+      "id": "OBS-17",
+      "x": 4,
+      "y": 4,
+      "time": 2,
+      "value": 17.1
+    },
+    {
+      "id": "HOT-0",
+      "x": 1,
+      "y": 1,
+      "time": 2,
+      "value": 0
+    },
+    {
+      "id": "HOT-1",
+      "x": 1,
+      "y": 1,
+      "time": 2,
+      "value": 1
+    },
+    {
+      "id": "HOT-2",
+      "x": 1,
+      "y": 1,
+      "time": 2,
+      "value": 2
+    },
+    {
+      "id": "HOT-3",
+      "x": 1,
+      "y": 1,
+      "time": 2,
+      "value": 3
+    },
+    {
+      "id": "HOT-4",
+      "x": 1,
+      "y": 1,
+      "time": 2,
+      "value": 4
+    }
+  ],
+  "failures": [],
+  "leaves": [
+    {
+      "path": [],
+      "id": "root",
+      "snapshot": "plot-1",
+      "bounds": {
+        "xmin": 0,
+        "xmax": 4,
+        "ymin": 0,
+        "ymax": 4,
+        "from": 0,
+        "until": 4
+      },
+      "status": "complete",
+      "split": null,
+      "evidence": {
+        "queried": true,
+        "truncated": false,
+        "returned": 23,
+        "lowerBound": 23,
+        "attempts": 1,
+        "requests": 1,
+        "addedRecords": [
+          "OBS-00",
+          "OBS-01",
+          "OBS-02",
+          "OBS-03",
+          "OBS-04",
+          "OBS-05",
+          "OBS-06",
+          "OBS-07",
+          "OBS-08",
+          "OBS-09",
+          "OBS-10",
+          "OBS-11",
+          "OBS-12",
+          "OBS-13",
+          "OBS-14",
+          "OBS-15",
+          "OBS-16",
+          "OBS-17",
+          "HOT-0",
+          "HOT-1",
+          "HOT-2",
+          "HOT-3",
+          "HOT-4"
+        ],
+        "duplicateRecords": 0,
+        "reason": null,
+        "detail": null,
+        "queriedAt": "2026-11-14T07:45:23.431Z"
+      }
+    }
+  ],
+  "leafCounts": {
+    "total": 1,
+    "complete": 1,
+    "pending": 0,
+    "incomplete": 0,
+    "blocked": 0
+  },
+  "tree": {
+    "id": "root",
+    "snapshot": "plot-1",
+    "bounds": {
+      "xmin": 0,
+      "xmax": 4,
+      "ymin": 0,
+      "ymax": 4,
+      "from": 0,
+      "until": 4
+    },
+    "status": "complete",
+    "split": null,
+    "evidence": {
+      "queried": true,
+      "truncated": false,
+      "returned": 23,
+      "lowerBound": 23,
+      "attempts": 1,
+      "requests": 1,
+      "addedRecords": [
+        "OBS-00",
+        "OBS-01",
+        "OBS-02",
+        "OBS-03",
+        "OBS-04",
+        "OBS-05",
+        "OBS-06",
+        "OBS-07",
+        "OBS-08",
+        "OBS-09",
+        "OBS-10",
+        "OBS-11",
+        "OBS-12",
+        "OBS-13",
+        "OBS-14",
+        "OBS-15",
+        "OBS-16",
+        "OBS-17",
+        "HOT-0",
+        "HOT-1",
+        "HOT-2",
+        "HOT-3",
+        "HOT-4"
+      ],
+      "duplicateRecords": 0,
+      "reason": null,
+      "detail": null,
+      "queriedAt": "2026-11-14T07:45:23.431Z"
+    },
+    "children": []
+  },
+  "startedAt": "2026-11-14T07:45:23.429Z",
+  "updatedAt": "2026-11-14T07:45:23.431Z",
+  "lastAttempt": {
+    "path": "/query?xmin=0&xmax=4&ymin=0&ymax=4&from=0&until=4",
+    "at": "2026-11-14T07:45:23.430Z",
+    "used": 2,
+    "budget": 40
+  },
+  "resumed": false,
+  "completedLeavesBeforeRun": 0,
+  "pendingLeavesBeforeRun": 1,
+  "base": "http://127.0.0.1:36891",
+  "duplicateRecords": 0,
+  "stopDetail": null
+}

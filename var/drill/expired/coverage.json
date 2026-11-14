@@ -1,0 +1,2594 @@
+{
+  "version": 1,
+  "snapshot": "plot-2",
+  "snapshotInfo": {
+    "snapshot": "plot-2",
+    "cap": 3,
+    "domain": {
+      "xmin": 0,
+      "xmax": 4,
+      "ymin": 0,
+      "ymax": 4,
+      "from": 0,
+      "until": 4
+    },
+    "minSpatial": 0.25,
+    "minTemporal": 1
+  },
+  "strategy": {
+    "dimensionSelection": "largest-normalized-span",
+    "boundary": "closed-intervals-shared-boundary-with-id-dedup",
+    "order": [
+      "temporal",
+      "spatialX",
+      "spatialY"
+    ]
+  },
+  "budget": 40,
+  "requestsUsed": 40,
+  "complete": false,
+  "claimedComplete": false,
+  "snapshotValid": true,
+  "stopReason": "budget-exhausted",
+  "records": [
+    {
+      "id": "OBS-00",
+      "x": 0,
+      "y": 0,
+      "time": 0,
+      "value": 0.1
+    },
+    {
+      "id": "OBS-09",
+      "x": 0,
+      "y": 0,
+      "time": 4,
+      "value": 9.1
+    },
+    {
+      "id": "OBS-12",
+      "x": 0,
+      "y": 2,
+      "time": 2,
+      "value": 12.1
+    }
+  ],
+  "failures": [
+    {
+      "node": "root.0.0.0.0.0.1.1.1.1.1",
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "bounds": {
+        "xmin": 0.75,
+        "xmax": 1,
+        "ymin": 0.75,
+        "ymax": 1,
+        "from": 1,
+        "until": 2
+      },
+      "status": "incomplete",
+      "code": "hotspot-unresolvable",
+      "detail": "达到 minSpatial=0.25 与 minTemporal=1 后仍截断：返回 3 条，下界 4；该区域无法证明完整。"
+    },
+    {
+      "node": "root.0.0.0.0.1.1.1.0.1.1",
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "bounds": {
+        "xmin": 0.75,
+        "xmax": 1,
+        "ymin": 0.75,
+        "ymax": 1,
+        "from": 2,
+        "until": 3
+      },
+      "status": "incomplete",
+      "code": "hotspot-unresolvable",
+      "detail": "达到 minSpatial=0.25 与 minTemporal=1 后仍截断：返回 3 条，下界 4；该区域无法证明完整。"
+    },
+    {
+      "node": "root.0.0.0.1.0.1.0.1.1.0",
+      "path": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "bounds": {
+        "xmin": 0.75,
+        "xmax": 1,
+        "ymin": 1,
+        "ymax": 1.25,
+        "from": 1,
+        "until": 2
+      },
+      "status": "incomplete",
+      "code": "hotspot-unresolvable",
+      "detail": "达到 minSpatial=0.25 与 minTemporal=1 后仍截断：返回 3 条，下界 4；该区域无法证明完整。"
+    }
+  ],
+  "leaves": [
+    {
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "root.0.0.0.0.0.0",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 0,
+        "xmax": 0.5,
+        "ymin": 0,
+        "ymax": 1,
+        "from": 0,
+        "until": 2
+      },
+      "status": "complete",
+      "split": null,
+      "evidence": {
+        "queried": true,
+        "truncated": false,
+        "returned": 1,
+        "lowerBound": 1,
+        "attempts": 1,
+        "requests": 1,
+        "addedRecords": [
+          "OBS-00"
+        ],
+        "duplicateRecords": 0,
+        "reason": null,
+        "detail": null,
+        "queriedAt": "2026-11-14T07:45:23.894Z"
+      }
+    },
+    {
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "id": "root.0.0.0.0.0.1.0",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 0.5,
+        "xmax": 1,
+        "ymin": 0,
+        "ymax": 0.5,
+        "from": 0,
+        "until": 2
+      },
+      "status": "complete",
+      "split": null,
+      "evidence": {
+        "queried": true,
+        "truncated": false,
+        "returned": 0,
+        "lowerBound": 0,
+        "attempts": 1,
+        "requests": 1,
+        "addedRecords": [],
+        "duplicateRecords": 0,
+        "reason": null,
+        "detail": null,
+        "queriedAt": "2026-11-14T07:45:23.898Z"
+      }
+    },
+    {
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "id": "root.0.0.0.0.0.1.1.0",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 0.5,
+        "xmax": 1,
+        "ymin": 0.5,
+        "ymax": 1,
+        "from": 0,
+        "until": 1
+      },
+      "status": "complete",
+      "split": null,
+      "evidence": {
+        "queried": true,
+        "truncated": false,
+        "returned": 0,
+        "lowerBound": 0,
+        "attempts": 1,
+        "requests": 1,
+        "addedRecords": [],
+        "duplicateRecords": 0,
+        "reason": null,
+        "detail": null,
+        "queriedAt": "2026-11-14T07:45:23.901Z"
+      }
+    },
+    {
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "id": "root.0.0.0.0.0.1.1.1.0",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 0.5,
+        "xmax": 0.75,
+        "ymin": 0.5,
+        "ymax": 1,
+        "from": 1,
+        "until": 2
+      },
+      "status": "complete",
+      "split": null,
+      "evidence": {
+        "queried": true,
+        "truncated": false,
+        "returned": 0,
+        "lowerBound": 0,
+        "attempts": 1,
+        "requests": 1,
+        "addedRecords": [],
+        "duplicateRecords": 0,
+        "reason": null,
+        "detail": null,
+        "queriedAt": "2026-11-14T07:45:23.904Z"
+      }
+    },
+    {
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "id": "root.0.0.0.0.0.1.1.1.1.0",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 0.75,
+        "xmax": 1,
+        "ymin": 0.5,
+        "ymax": 0.75,
+        "from": 1,
+        "until": 2
+      },
+      "status": "complete",
+      "split": null,
+      "evidence": {
+        "queried": true,
+        "truncated": false,
+        "returned": 0,
+        "lowerBound": 0,
+        "attempts": 1,
+        "requests": 1,
+        "addedRecords": [],
+        "duplicateRecords": 0,
+        "reason": null,
+        "detail": null,
+        "queriedAt": "2026-11-14T07:45:23.907Z"
+      }
+    },
+    {
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "id": "root.0.0.0.0.0.1.1.1.1.1",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 0.75,
+        "xmax": 1,
+        "ymin": 0.75,
+        "ymax": 1,
+        "from": 1,
+        "until": 2
+      },
+      "status": "incomplete",
+      "split": {
+        "dimension": null,
+        "candidates": [],
+        "reason": "at-minimum-precision",
+        "at": "2026-11-14T07:45:23.908Z"
+      },
+      "evidence": {
+        "queried": true,
+        "truncated": true,
+        "returned": 3,
+        "lowerBound": 4,
+        "attempts": 1,
+        "requests": 1,
+        "addedRecords": [],
+        "duplicateRecords": 0,
+        "reason": "min-granularity-truncated",
+        "detail": "达到 minSpatial=0.25 与 minTemporal=1 后仍截断：返回 3 条，下界 4；该区域无法证明完整。",
+        "queriedAt": "2026-11-14T07:45:23.908Z",
+        "partialIds": [
+          "HOT-0",
+          "HOT-1",
+          "HOT-2"
+        ]
+      }
+    },
+    {
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "id": "root.0.0.0.0.1.0",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 0,
+        "xmax": 0.5,
+        "ymin": 0,
+        "ymax": 1,
+        "from": 2,
+        "until": 4
+      },
+      "status": "complete",
+      "split": null,
+      "evidence": {
+        "queried": true,
+        "truncated": false,
+        "returned": 1,
+        "lowerBound": 1,
+        "attempts": 1,
+        "requests": 1,
+        "addedRecords": [
+          "OBS-09"
+        ],
+        "duplicateRecords": 0,
+        "reason": null,
+        "detail": null,
+        "queriedAt": "2026-11-14T07:45:23.912Z"
+      }
+    },
+    {
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "id": "root.0.0.0.0.1.1.0",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 0.5,
+        "xmax": 1,
+        "ymin": 0,
+        "ymax": 0.5,
+        "from": 2,
+        "until": 4
+      },
+      "status": "complete",
+      "split": null,
+      "evidence": {
+        "queried": true,
+        "truncated": false,
+        "returned": 0,
+        "lowerBound": 0,
+        "attempts": 1,
+        "requests": 1,
+        "addedRecords": [],
+        "duplicateRecords": 0,
+        "reason": null,
+        "detail": null,
+        "queriedAt": "2026-11-14T07:45:23.915Z"
+      }
+    },
+    {
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "id": "root.0.0.0.0.1.1.1.0.0",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 0.5,
+        "xmax": 0.75,
+        "ymin": 0.5,
+        "ymax": 1,
+        "from": 2,
+        "until": 3
+      },
+      "status": "complete",
+      "split": null,
+      "evidence": {
+        "queried": true,
+        "truncated": false,
+        "returned": 0,
+        "lowerBound": 0,
+        "attempts": 1,
+        "requests": 1,
+        "addedRecords": [],
+        "duplicateRecords": 0,
+        "reason": null,
+        "detail": null,
+        "queriedAt": "2026-11-14T07:45:23.921Z"
+      }
+    },
+    {
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "id": "root.0.0.0.0.1.1.1.0.1.0",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 0.75,
+        "xmax": 1,
+        "ymin": 0.5,
+        "ymax": 0.75,
+        "from": 2,
+        "until": 3
+      },
+      "status": "complete",
+      "split": null,
+      "evidence": {
+        "queried": true,
+        "truncated": false,
+        "returned": 0,
+        "lowerBound": 0,
+        "attempts": 1,
+        "requests": 1,
+        "addedRecords": [],
+        "duplicateRecords": 0,
+        "reason": null,
+        "detail": null,
+        "queriedAt": "2026-11-14T07:45:23.925Z"
+      }
+    },
+    {
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "id": "root.0.0.0.0.1.1.1.0.1.1",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 0.75,
+        "xmax": 1,
+        "ymin": 0.75,
+        "ymax": 1,
+        "from": 2,
+        "until": 3
+      },
+      "status": "incomplete",
+      "split": {
+        "dimension": null,
+        "candidates": [],
+        "reason": "at-minimum-precision",
+        "at": "2026-11-14T07:45:23.927Z"
+      },
+      "evidence": {
+        "queried": true,
+        "truncated": true,
+        "returned": 3,
+        "lowerBound": 4,
+        "attempts": 1,
+        "requests": 1,
+        "addedRecords": [],
+        "duplicateRecords": 0,
+        "reason": "min-granularity-truncated",
+        "detail": "达到 minSpatial=0.25 与 minTemporal=1 后仍截断：返回 3 条，下界 4；该区域无法证明完整。",
+        "queriedAt": "2026-11-14T07:45:23.927Z",
+        "partialIds": [
+          "HOT-0",
+          "HOT-1",
+          "HOT-2"
+        ]
+      }
+    },
+    {
+      "path": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "id": "root.0.0.0.0.1.1.1.1",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 0.5,
+        "xmax": 1,
+        "ymin": 0.5,
+        "ymax": 1,
+        "from": 3,
+        "until": 4
+      },
+      "status": "complete",
+      "split": null,
+      "evidence": {
+        "queried": true,
+        "truncated": false,
+        "returned": 0,
+        "lowerBound": 0,
+        "attempts": 1,
+        "requests": 1,
+        "addedRecords": [],
+        "duplicateRecords": 0,
+        "reason": null,
+        "detail": null,
+        "queriedAt": "2026-11-14T07:45:23.931Z"
+      }
+    },
+    {
+      "path": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "id": "root.0.0.0.1.0.0",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 0,
+        "xmax": 0.5,
+        "ymin": 1,
+        "ymax": 2,
+        "from": 0,
+        "until": 2
+      },
+      "status": "complete",
+      "split": null,
+      "evidence": {
+        "queried": true,
+        "truncated": false,
+        "returned": 1,
+        "lowerBound": 1,
+        "attempts": 1,
+        "requests": 1,
+        "addedRecords": [
+          "OBS-12"
+        ],
+        "duplicateRecords": 0,
+        "reason": null,
+        "detail": null,
+        "queriedAt": "2026-11-14T07:45:23.937Z"
+      }
+    },
+    {
+      "path": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "id": "root.0.0.0.1.0.1.0.0",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 0.5,
+        "xmax": 1,
+        "ymin": 1,
+        "ymax": 1.5,
+        "from": 0,
+        "until": 1
+      },
+      "status": "complete",
+      "split": null,
+      "evidence": {
+        "queried": true,
+        "truncated": false,
+        "returned": 0,
+        "lowerBound": 0,
+        "attempts": 1,
+        "requests": 1,
+        "addedRecords": [],
+        "duplicateRecords": 0,
+        "reason": null,
+        "detail": null,
+        "queriedAt": "2026-11-14T07:45:23.944Z"
+      }
+    },
+    {
+      "path": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "id": "root.0.0.0.1.0.1.0.1.0",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 0.5,
+        "xmax": 0.75,
+        "ymin": 1,
+        "ymax": 1.5,
+        "from": 1,
+        "until": 2
+      },
+      "status": "complete",
+      "split": null,
+      "evidence": {
+        "queried": true,
+        "truncated": false,
+        "returned": 0,
+        "lowerBound": 0,
+        "attempts": 1,
+        "requests": 1,
+        "addedRecords": [],
+        "duplicateRecords": 0,
+        "reason": null,
+        "detail": null,
+        "queriedAt": "2026-11-14T07:45:23.949Z"
+      }
+    },
+    {
+      "path": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "id": "root.0.0.0.1.0.1.0.1.1.0",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 0.75,
+        "xmax": 1,
+        "ymin": 1,
+        "ymax": 1.25,
+        "from": 1,
+        "until": 2
+      },
+      "status": "incomplete",
+      "split": {
+        "dimension": null,
+        "candidates": [],
+        "reason": "at-minimum-precision",
+        "at": "2026-11-14T07:45:23.954Z"
+      },
+      "evidence": {
+        "queried": true,
+        "truncated": true,
+        "returned": 3,
+        "lowerBound": 4,
+        "attempts": 1,
+        "requests": 1,
+        "addedRecords": [],
+        "duplicateRecords": 0,
+        "reason": "min-granularity-truncated",
+        "detail": "达到 minSpatial=0.25 与 minTemporal=1 后仍截断：返回 3 条，下界 4；该区域无法证明完整。",
+        "queriedAt": "2026-11-14T07:45:23.954Z",
+        "partialIds": [
+          "HOT-0",
+          "HOT-1",
+          "HOT-2"
+        ]
+      }
+    },
+    {
+      "path": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "id": "root.0.0.0.1.0.1.0.1.1.1",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 0.75,
+        "xmax": 1,
+        "ymin": 1.25,
+        "ymax": 1.5,
+        "from": 1,
+        "until": 2
+      },
+      "status": "complete",
+      "split": null,
+      "evidence": {
+        "queried": true,
+        "truncated": false,
+        "returned": 0,
+        "lowerBound": 0,
+        "attempts": 1,
+        "requests": 1,
+        "addedRecords": [],
+        "duplicateRecords": 0,
+        "reason": null,
+        "detail": null,
+        "queriedAt": "2026-11-14T07:45:23.956Z"
+      }
+    },
+    {
+      "path": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "id": "root.0.0.0.1.0.1.1",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 0.5,
+        "xmax": 1,
+        "ymin": 1.5,
+        "ymax": 2,
+        "from": 0,
+        "until": 2
+      },
+      "status": "complete",
+      "split": null,
+      "evidence": {
+        "queried": true,
+        "truncated": false,
+        "returned": 0,
+        "lowerBound": 0,
+        "attempts": 1,
+        "requests": 1,
+        "addedRecords": [],
+        "duplicateRecords": 0,
+        "reason": null,
+        "detail": null,
+        "queriedAt": "2026-11-14T07:45:23.959Z"
+      }
+    },
+    {
+      "path": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "id": "root.0.0.0.1.1",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 0,
+        "xmax": 1,
+        "ymin": 1,
+        "ymax": 2,
+        "from": 2,
+        "until": 4
+      },
+      "status": "pending",
+      "split": null,
+      "evidence": {
+        "queried": false,
+        "truncated": null,
+        "returned": 0,
+        "lowerBound": null,
+        "attempts": 0,
+        "requests": 0,
+        "reason": "budget-exhausted",
+        "detail": {
+          "message": "未被查询，预算已耗尽；可按同一快照续跑"
+        }
+      }
+    },
+    {
+      "path": [
+        0,
+        0,
+        1
+      ],
+      "id": "root.0.0.1",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 1,
+        "xmax": 2,
+        "ymin": 0,
+        "ymax": 2,
+        "from": 0,
+        "until": 4
+      },
+      "status": "pending",
+      "split": null,
+      "evidence": {
+        "queried": false,
+        "truncated": null,
+        "returned": 0,
+        "lowerBound": null,
+        "attempts": 0,
+        "requests": 0,
+        "reason": "budget-exhausted",
+        "detail": {
+          "message": "未被查询，预算已耗尽；可按同一快照续跑"
+        }
+      }
+    },
+    {
+      "path": [
+        0,
+        1
+      ],
+      "id": "root.0.1",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 0,
+        "xmax": 2,
+        "ymin": 2,
+        "ymax": 4,
+        "from": 0,
+        "until": 4
+      },
+      "status": "pending",
+      "split": null,
+      "evidence": {
+        "queried": false,
+        "truncated": null,
+        "returned": 0,
+        "lowerBound": null,
+        "attempts": 0,
+        "requests": 0,
+        "reason": "budget-exhausted",
+        "detail": {
+          "message": "未被查询，预算已耗尽；可按同一快照续跑"
+        }
+      }
+    },
+    {
+      "path": [
+        1
+      ],
+      "id": "root.1",
+      "snapshot": "plot-2",
+      "bounds": {
+        "xmin": 2,
+        "xmax": 4,
+        "ymin": 0,
+        "ymax": 4,
+        "from": 0,
+        "until": 4
+      },
+      "status": "pending",
+      "split": null,
+      "evidence": {
+        "queried": false,
+        "truncated": null,
+        "returned": 0,
+        "lowerBound": null,
+        "attempts": 0,
+        "requests": 0,
+        "reason": "budget-exhausted",
+        "detail": {
+          "message": "未被查询，预算已耗尽；可按同一快照续跑"
+        }
+      }
+    }
+  ],
+  "leafCounts": {
+    "total": 22,
+    "complete": 15,
+    "pending": 4,
+    "incomplete": 3,
+    "blocked": 0
+  },
+  "tree": {
+    "id": "root",
+    "snapshot": "plot-2",
+    "bounds": {
+      "xmin": 0,
+      "xmax": 4,
+      "ymin": 0,
+      "ymax": 4,
+      "from": 0,
+      "until": 4
+    },
+    "status": "split",
+    "split": {
+      "dimension": "spatialX",
+      "candidates": [
+        {
+          "dimension": "spatialX",
+          "steps": 16
+        },
+        {
+          "dimension": "spatialY",
+          "steps": 16
+        },
+        {
+          "dimension": "temporal",
+          "steps": 4
+        }
+      ],
+      "at": "2026-11-14T07:45:23.887Z"
+    },
+    "evidence": {
+      "queried": true,
+      "truncated": true,
+      "returned": 3,
+      "lowerBound": 4,
+      "attempts": 1,
+      "requests": 1,
+      "addedRecords": [],
+      "duplicateRecords": 0,
+      "reason": null,
+      "detail": null,
+      "queriedAt": "2026-11-14T07:45:23.887Z",
+      "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+    },
+    "children": [
+      {
+        "id": "root.0",
+        "snapshot": "plot-2",
+        "bounds": {
+          "xmin": 0,
+          "xmax": 2,
+          "ymin": 0,
+          "ymax": 4,
+          "from": 0,
+          "until": 4
+        },
+        "status": "split",
+        "split": {
+          "dimension": "spatialY",
+          "candidates": [
+            {
+              "dimension": "spatialY",
+              "steps": 16
+            },
+            {
+              "dimension": "spatialX",
+              "steps": 8
+            },
+            {
+              "dimension": "temporal",
+              "steps": 4
+            }
+          ],
+          "at": "2026-11-14T07:45:23.888Z"
+        },
+        "evidence": {
+          "queried": true,
+          "truncated": true,
+          "returned": 3,
+          "lowerBound": 4,
+          "attempts": 1,
+          "requests": 1,
+          "addedRecords": [],
+          "duplicateRecords": 0,
+          "reason": null,
+          "detail": null,
+          "queriedAt": "2026-11-14T07:45:23.888Z",
+          "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+        },
+        "children": [
+          {
+            "id": "root.0.0",
+            "snapshot": "plot-2",
+            "bounds": {
+              "xmin": 0,
+              "xmax": 2,
+              "ymin": 0,
+              "ymax": 2,
+              "from": 0,
+              "until": 4
+            },
+            "status": "split",
+            "split": {
+              "dimension": "spatialX",
+              "candidates": [
+                {
+                  "dimension": "spatialX",
+                  "steps": 8
+                },
+                {
+                  "dimension": "spatialY",
+                  "steps": 8
+                },
+                {
+                  "dimension": "temporal",
+                  "steps": 4
+                }
+              ],
+              "at": "2026-11-14T07:45:23.890Z"
+            },
+            "evidence": {
+              "queried": true,
+              "truncated": true,
+              "returned": 3,
+              "lowerBound": 4,
+              "attempts": 1,
+              "requests": 1,
+              "addedRecords": [],
+              "duplicateRecords": 0,
+              "reason": null,
+              "detail": null,
+              "queriedAt": "2026-11-14T07:45:23.890Z",
+              "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+            },
+            "children": [
+              {
+                "id": "root.0.0.0",
+                "snapshot": "plot-2",
+                "bounds": {
+                  "xmin": 0,
+                  "xmax": 1,
+                  "ymin": 0,
+                  "ymax": 2,
+                  "from": 0,
+                  "until": 4
+                },
+                "status": "split",
+                "split": {
+                  "dimension": "spatialY",
+                  "candidates": [
+                    {
+                      "dimension": "spatialY",
+                      "steps": 8
+                    },
+                    {
+                      "dimension": "temporal",
+                      "steps": 4
+                    },
+                    {
+                      "dimension": "spatialX",
+                      "steps": 4
+                    }
+                  ],
+                  "at": "2026-11-14T07:45:23.891Z"
+                },
+                "evidence": {
+                  "queried": true,
+                  "truncated": true,
+                  "returned": 3,
+                  "lowerBound": 4,
+                  "attempts": 1,
+                  "requests": 1,
+                  "addedRecords": [],
+                  "duplicateRecords": 0,
+                  "reason": null,
+                  "detail": null,
+                  "queriedAt": "2026-11-14T07:45:23.891Z",
+                  "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+                },
+                "children": [
+                  {
+                    "id": "root.0.0.0.0",
+                    "snapshot": "plot-2",
+                    "bounds": {
+                      "xmin": 0,
+                      "xmax": 1,
+                      "ymin": 0,
+                      "ymax": 1,
+                      "from": 0,
+                      "until": 4
+                    },
+                    "status": "split",
+                    "split": {
+                      "dimension": "temporal",
+                      "candidates": [
+                        {
+                          "dimension": "temporal",
+                          "steps": 4
+                        },
+                        {
+                          "dimension": "spatialX",
+                          "steps": 4
+                        },
+                        {
+                          "dimension": "spatialY",
+                          "steps": 4
+                        }
+                      ],
+                      "at": "2026-11-14T07:45:23.892Z"
+                    },
+                    "evidence": {
+                      "queried": true,
+                      "truncated": true,
+                      "returned": 3,
+                      "lowerBound": 4,
+                      "attempts": 1,
+                      "requests": 1,
+                      "addedRecords": [],
+                      "duplicateRecords": 0,
+                      "reason": null,
+                      "detail": null,
+                      "queriedAt": "2026-11-14T07:45:23.892Z",
+                      "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+                    },
+                    "children": [
+                      {
+                        "id": "root.0.0.0.0.0",
+                        "snapshot": "plot-2",
+                        "bounds": {
+                          "xmin": 0,
+                          "xmax": 1,
+                          "ymin": 0,
+                          "ymax": 1,
+                          "from": 0,
+                          "until": 2
+                        },
+                        "status": "split",
+                        "split": {
+                          "dimension": "spatialX",
+                          "candidates": [
+                            {
+                              "dimension": "spatialX",
+                              "steps": 4
+                            },
+                            {
+                              "dimension": "spatialY",
+                              "steps": 4
+                            },
+                            {
+                              "dimension": "temporal",
+                              "steps": 2
+                            }
+                          ],
+                          "at": "2026-11-14T07:45:23.893Z"
+                        },
+                        "evidence": {
+                          "queried": true,
+                          "truncated": true,
+                          "returned": 3,
+                          "lowerBound": 4,
+                          "attempts": 1,
+                          "requests": 1,
+                          "addedRecords": [],
+                          "duplicateRecords": 0,
+                          "reason": null,
+                          "detail": null,
+                          "queriedAt": "2026-11-14T07:45:23.893Z",
+                          "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+                        },
+                        "children": [
+                          {
+                            "id": "root.0.0.0.0.0.0",
+                            "snapshot": "plot-2",
+                            "bounds": {
+                              "xmin": 0,
+                              "xmax": 0.5,
+                              "ymin": 0,
+                              "ymax": 1,
+                              "from": 0,
+                              "until": 2
+                            },
+                            "status": "complete",
+                            "split": null,
+                            "evidence": {
+                              "queried": true,
+                              "truncated": false,
+                              "returned": 1,
+                              "lowerBound": 1,
+                              "attempts": 1,
+                              "requests": 1,
+                              "addedRecords": [
+                                "OBS-00"
+                              ],
+                              "duplicateRecords": 0,
+                              "reason": null,
+                              "detail": null,
+                              "queriedAt": "2026-11-14T07:45:23.894Z"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "root.0.0.0.0.0.1",
+                            "snapshot": "plot-2",
+                            "bounds": {
+                              "xmin": 0.5,
+                              "xmax": 1,
+                              "ymin": 0,
+                              "ymax": 1,
+                              "from": 0,
+                              "until": 2
+                            },
+                            "status": "split",
+                            "split": {
+                              "dimension": "spatialY",
+                              "candidates": [
+                                {
+                                  "dimension": "spatialY",
+                                  "steps": 4
+                                },
+                                {
+                                  "dimension": "temporal",
+                                  "steps": 2
+                                },
+                                {
+                                  "dimension": "spatialX",
+                                  "steps": 2
+                                }
+                              ],
+                              "at": "2026-11-14T07:45:23.896Z"
+                            },
+                            "evidence": {
+                              "queried": true,
+                              "truncated": true,
+                              "returned": 3,
+                              "lowerBound": 4,
+                              "attempts": 1,
+                              "requests": 1,
+                              "addedRecords": [],
+                              "duplicateRecords": 0,
+                              "reason": null,
+                              "detail": null,
+                              "queriedAt": "2026-11-14T07:45:23.896Z",
+                              "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+                            },
+                            "children": [
+                              {
+                                "id": "root.0.0.0.0.0.1.0",
+                                "snapshot": "plot-2",
+                                "bounds": {
+                                  "xmin": 0.5,
+                                  "xmax": 1,
+                                  "ymin": 0,
+                                  "ymax": 0.5,
+                                  "from": 0,
+                                  "until": 2
+                                },
+                                "status": "complete",
+                                "split": null,
+                                "evidence": {
+                                  "queried": true,
+                                  "truncated": false,
+                                  "returned": 0,
+                                  "lowerBound": 0,
+                                  "attempts": 1,
+                                  "requests": 1,
+                                  "addedRecords": [],
+                                  "duplicateRecords": 0,
+                                  "reason": null,
+                                  "detail": null,
+                                  "queriedAt": "2026-11-14T07:45:23.898Z"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "root.0.0.0.0.0.1.1",
+                                "snapshot": "plot-2",
+                                "bounds": {
+                                  "xmin": 0.5,
+                                  "xmax": 1,
+                                  "ymin": 0.5,
+                                  "ymax": 1,
+                                  "from": 0,
+                                  "until": 2
+                                },
+                                "status": "split",
+                                "split": {
+                                  "dimension": "temporal",
+                                  "candidates": [
+                                    {
+                                      "dimension": "temporal",
+                                      "steps": 2
+                                    },
+                                    {
+                                      "dimension": "spatialX",
+                                      "steps": 2
+                                    },
+                                    {
+                                      "dimension": "spatialY",
+                                      "steps": 2
+                                    }
+                                  ],
+                                  "at": "2026-11-14T07:45:23.899Z"
+                                },
+                                "evidence": {
+                                  "queried": true,
+                                  "truncated": true,
+                                  "returned": 3,
+                                  "lowerBound": 4,
+                                  "attempts": 1,
+                                  "requests": 1,
+                                  "addedRecords": [],
+                                  "duplicateRecords": 0,
+                                  "reason": null,
+                                  "detail": null,
+                                  "queriedAt": "2026-11-14T07:45:23.899Z",
+                                  "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+                                },
+                                "children": [
+                                  {
+                                    "id": "root.0.0.0.0.0.1.1.0",
+                                    "snapshot": "plot-2",
+                                    "bounds": {
+                                      "xmin": 0.5,
+                                      "xmax": 1,
+                                      "ymin": 0.5,
+                                      "ymax": 1,
+                                      "from": 0,
+                                      "until": 1
+                                    },
+                                    "status": "complete",
+                                    "split": null,
+                                    "evidence": {
+                                      "queried": true,
+                                      "truncated": false,
+                                      "returned": 0,
+                                      "lowerBound": 0,
+                                      "attempts": 1,
+                                      "requests": 1,
+                                      "addedRecords": [],
+                                      "duplicateRecords": 0,
+                                      "reason": null,
+                                      "detail": null,
+                                      "queriedAt": "2026-11-14T07:45:23.901Z"
+                                    },
+                                    "children": []
+                                  },
+                                  {
+                                    "id": "root.0.0.0.0.0.1.1.1",
+                                    "snapshot": "plot-2",
+                                    "bounds": {
+                                      "xmin": 0.5,
+                                      "xmax": 1,
+                                      "ymin": 0.5,
+                                      "ymax": 1,
+                                      "from": 1,
+                                      "until": 2
+                                    },
+                                    "status": "split",
+                                    "split": {
+                                      "dimension": "spatialX",
+                                      "candidates": [
+                                        {
+                                          "dimension": "spatialX",
+                                          "steps": 2
+                                        },
+                                        {
+                                          "dimension": "spatialY",
+                                          "steps": 2
+                                        }
+                                      ],
+                                      "at": "2026-11-14T07:45:23.902Z"
+                                    },
+                                    "evidence": {
+                                      "queried": true,
+                                      "truncated": true,
+                                      "returned": 3,
+                                      "lowerBound": 4,
+                                      "attempts": 1,
+                                      "requests": 1,
+                                      "addedRecords": [],
+                                      "duplicateRecords": 0,
+                                      "reason": null,
+                                      "detail": null,
+                                      "queriedAt": "2026-11-14T07:45:23.902Z",
+                                      "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+                                    },
+                                    "children": [
+                                      {
+                                        "id": "root.0.0.0.0.0.1.1.1.0",
+                                        "snapshot": "plot-2",
+                                        "bounds": {
+                                          "xmin": 0.5,
+                                          "xmax": 0.75,
+                                          "ymin": 0.5,
+                                          "ymax": 1,
+                                          "from": 1,
+                                          "until": 2
+                                        },
+                                        "status": "complete",
+                                        "split": null,
+                                        "evidence": {
+                                          "queried": true,
+                                          "truncated": false,
+                                          "returned": 0,
+                                          "lowerBound": 0,
+                                          "attempts": 1,
+                                          "requests": 1,
+                                          "addedRecords": [],
+                                          "duplicateRecords": 0,
+                                          "reason": null,
+                                          "detail": null,
+                                          "queriedAt": "2026-11-14T07:45:23.904Z"
+                                        },
+                                        "children": []
+                                      },
+                                      {
+                                        "id": "root.0.0.0.0.0.1.1.1.1",
+                                        "snapshot": "plot-2",
+                                        "bounds": {
+                                          "xmin": 0.75,
+                                          "xmax": 1,
+                                          "ymin": 0.5,
+                                          "ymax": 1,
+                                          "from": 1,
+                                          "until": 2
+                                        },
+                                        "status": "split",
+                                        "split": {
+                                          "dimension": "spatialY",
+                                          "candidates": [
+                                            {
+                                              "dimension": "spatialY",
+                                              "steps": 2
+                                            }
+                                          ],
+                                          "at": "2026-11-14T07:45:23.905Z"
+                                        },
+                                        "evidence": {
+                                          "queried": true,
+                                          "truncated": true,
+                                          "returned": 3,
+                                          "lowerBound": 4,
+                                          "attempts": 1,
+                                          "requests": 1,
+                                          "addedRecords": [],
+                                          "duplicateRecords": 0,
+                                          "reason": null,
+                                          "detail": null,
+                                          "queriedAt": "2026-11-14T07:45:23.905Z",
+                                          "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+                                        },
+                                        "children": [
+                                          {
+                                            "id": "root.0.0.0.0.0.1.1.1.1.0",
+                                            "snapshot": "plot-2",
+                                            "bounds": {
+                                              "xmin": 0.75,
+                                              "xmax": 1,
+                                              "ymin": 0.5,
+                                              "ymax": 0.75,
+                                              "from": 1,
+                                              "until": 2
+                                            },
+                                            "status": "complete",
+                                            "split": null,
+                                            "evidence": {
+                                              "queried": true,
+                                              "truncated": false,
+                                              "returned": 0,
+                                              "lowerBound": 0,
+                                              "attempts": 1,
+                                              "requests": 1,
+                                              "addedRecords": [],
+                                              "duplicateRecords": 0,
+                                              "reason": null,
+                                              "detail": null,
+                                              "queriedAt": "2026-11-14T07:45:23.907Z"
+                                            },
+                                            "children": []
+                                          },
+                                          {
+                                            "id": "root.0.0.0.0.0.1.1.1.1.1",
+                                            "snapshot": "plot-2",
+                                            "bounds": {
+                                              "xmin": 0.75,
+                                              "xmax": 1,
+                                              "ymin": 0.75,
+                                              "ymax": 1,
+                                              "from": 1,
+                                              "until": 2
+                                            },
+                                            "status": "incomplete",
+                                            "split": {
+                                              "dimension": null,
+                                              "candidates": [],
+                                              "reason": "at-minimum-precision",
+                                              "at": "2026-11-14T07:45:23.908Z"
+                                            },
+                                            "evidence": {
+                                              "queried": true,
+                                              "truncated": true,
+                                              "returned": 3,
+                                              "lowerBound": 4,
+                                              "attempts": 1,
+                                              "requests": 1,
+                                              "addedRecords": [],
+                                              "duplicateRecords": 0,
+                                              "reason": "min-granularity-truncated",
+                                              "detail": "达到 minSpatial=0.25 与 minTemporal=1 后仍截断：返回 3 条，下界 4；该区域无法证明完整。",
+                                              "queriedAt": "2026-11-14T07:45:23.908Z",
+                                              "partialIds": [
+                                                "HOT-0",
+                                                "HOT-1",
+                                                "HOT-2"
+                                              ]
+                                            },
+                                            "children": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "root.0.0.0.0.1",
+                        "snapshot": "plot-2",
+                        "bounds": {
+                          "xmin": 0,
+                          "xmax": 1,
+                          "ymin": 0,
+                          "ymax": 1,
+                          "from": 2,
+                          "until": 4
+                        },
+                        "status": "split",
+                        "split": {
+                          "dimension": "spatialX",
+                          "candidates": [
+                            {
+                              "dimension": "spatialX",
+                              "steps": 4
+                            },
+                            {
+                              "dimension": "spatialY",
+                              "steps": 4
+                            },
+                            {
+                              "dimension": "temporal",
+                              "steps": 2
+                            }
+                          ],
+                          "at": "2026-11-14T07:45:23.910Z"
+                        },
+                        "evidence": {
+                          "queried": true,
+                          "truncated": true,
+                          "returned": 3,
+                          "lowerBound": 4,
+                          "attempts": 1,
+                          "requests": 1,
+                          "addedRecords": [],
+                          "duplicateRecords": 0,
+                          "reason": null,
+                          "detail": null,
+                          "queriedAt": "2026-11-14T07:45:23.910Z",
+                          "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+                        },
+                        "children": [
+                          {
+                            "id": "root.0.0.0.0.1.0",
+                            "snapshot": "plot-2",
+                            "bounds": {
+                              "xmin": 0,
+                              "xmax": 0.5,
+                              "ymin": 0,
+                              "ymax": 1,
+                              "from": 2,
+                              "until": 4
+                            },
+                            "status": "complete",
+                            "split": null,
+                            "evidence": {
+                              "queried": true,
+                              "truncated": false,
+                              "returned": 1,
+                              "lowerBound": 1,
+                              "attempts": 1,
+                              "requests": 1,
+                              "addedRecords": [
+                                "OBS-09"
+                              ],
+                              "duplicateRecords": 0,
+                              "reason": null,
+                              "detail": null,
+                              "queriedAt": "2026-11-14T07:45:23.912Z"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "root.0.0.0.0.1.1",
+                            "snapshot": "plot-2",
+                            "bounds": {
+                              "xmin": 0.5,
+                              "xmax": 1,
+                              "ymin": 0,
+                              "ymax": 1,
+                              "from": 2,
+                              "until": 4
+                            },
+                            "status": "split",
+                            "split": {
+                              "dimension": "spatialY",
+                              "candidates": [
+                                {
+                                  "dimension": "spatialY",
+                                  "steps": 4
+                                },
+                                {
+                                  "dimension": "temporal",
+                                  "steps": 2
+                                },
+                                {
+                                  "dimension": "spatialX",
+                                  "steps": 2
+                                }
+                              ],
+                              "at": "2026-11-14T07:45:23.914Z"
+                            },
+                            "evidence": {
+                              "queried": true,
+                              "truncated": true,
+                              "returned": 3,
+                              "lowerBound": 4,
+                              "attempts": 1,
+                              "requests": 1,
+                              "addedRecords": [],
+                              "duplicateRecords": 0,
+                              "reason": null,
+                              "detail": null,
+                              "queriedAt": "2026-11-14T07:45:23.913Z",
+                              "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+                            },
+                            "children": [
+                              {
+                                "id": "root.0.0.0.0.1.1.0",
+                                "snapshot": "plot-2",
+                                "bounds": {
+                                  "xmin": 0.5,
+                                  "xmax": 1,
+                                  "ymin": 0,
+                                  "ymax": 0.5,
+                                  "from": 2,
+                                  "until": 4
+                                },
+                                "status": "complete",
+                                "split": null,
+                                "evidence": {
+                                  "queried": true,
+                                  "truncated": false,
+                                  "returned": 0,
+                                  "lowerBound": 0,
+                                  "attempts": 1,
+                                  "requests": 1,
+                                  "addedRecords": [],
+                                  "duplicateRecords": 0,
+                                  "reason": null,
+                                  "detail": null,
+                                  "queriedAt": "2026-11-14T07:45:23.915Z"
+                                },
+                                "children": []
+                              },
+                              {
+                                "id": "root.0.0.0.0.1.1.1",
+                                "snapshot": "plot-2",
+                                "bounds": {
+                                  "xmin": 0.5,
+                                  "xmax": 1,
+                                  "ymin": 0.5,
+                                  "ymax": 1,
+                                  "from": 2,
+                                  "until": 4
+                                },
+                                "status": "split",
+                                "split": {
+                                  "dimension": "temporal",
+                                  "candidates": [
+                                    {
+                                      "dimension": "temporal",
+                                      "steps": 2
+                                    },
+                                    {
+                                      "dimension": "spatialX",
+                                      "steps": 2
+                                    },
+                                    {
+                                      "dimension": "spatialY",
+                                      "steps": 2
+                                    }
+                                  ],
+                                  "at": "2026-11-14T07:45:23.917Z"
+                                },
+                                "evidence": {
+                                  "queried": true,
+                                  "truncated": true,
+                                  "returned": 3,
+                                  "lowerBound": 4,
+                                  "attempts": 1,
+                                  "requests": 1,
+                                  "addedRecords": [],
+                                  "duplicateRecords": 0,
+                                  "reason": null,
+                                  "detail": null,
+                                  "queriedAt": "2026-11-14T07:45:23.917Z",
+                                  "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+                                },
+                                "children": [
+                                  {
+                                    "id": "root.0.0.0.0.1.1.1.0",
+                                    "snapshot": "plot-2",
+                                    "bounds": {
+                                      "xmin": 0.5,
+                                      "xmax": 1,
+                                      "ymin": 0.5,
+                                      "ymax": 1,
+                                      "from": 2,
+                                      "until": 3
+                                    },
+                                    "status": "split",
+                                    "split": {
+                                      "dimension": "spatialX",
+                                      "candidates": [
+                                        {
+                                          "dimension": "spatialX",
+                                          "steps": 2
+                                        },
+                                        {
+                                          "dimension": "spatialY",
+                                          "steps": 2
+                                        }
+                                      ],
+                                      "at": "2026-11-14T07:45:23.919Z"
+                                    },
+                                    "evidence": {
+                                      "queried": true,
+                                      "truncated": true,
+                                      "returned": 3,
+                                      "lowerBound": 4,
+                                      "attempts": 1,
+                                      "requests": 1,
+                                      "addedRecords": [],
+                                      "duplicateRecords": 0,
+                                      "reason": null,
+                                      "detail": null,
+                                      "queriedAt": "2026-11-14T07:45:23.919Z",
+                                      "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+                                    },
+                                    "children": [
+                                      {
+                                        "id": "root.0.0.0.0.1.1.1.0.0",
+                                        "snapshot": "plot-2",
+                                        "bounds": {
+                                          "xmin": 0.5,
+                                          "xmax": 0.75,
+                                          "ymin": 0.5,
+                                          "ymax": 1,
+                                          "from": 2,
+                                          "until": 3
+                                        },
+                                        "status": "complete",
+                                        "split": null,
+                                        "evidence": {
+                                          "queried": true,
+                                          "truncated": false,
+                                          "returned": 0,
+                                          "lowerBound": 0,
+                                          "attempts": 1,
+                                          "requests": 1,
+                                          "addedRecords": [],
+                                          "duplicateRecords": 0,
+                                          "reason": null,
+                                          "detail": null,
+                                          "queriedAt": "2026-11-14T07:45:23.921Z"
+                                        },
+                                        "children": []
+                                      },
+                                      {
+                                        "id": "root.0.0.0.0.1.1.1.0.1",
+                                        "snapshot": "plot-2",
+                                        "bounds": {
+                                          "xmin": 0.75,
+                                          "xmax": 1,
+                                          "ymin": 0.5,
+                                          "ymax": 1,
+                                          "from": 2,
+                                          "until": 3
+                                        },
+                                        "status": "split",
+                                        "split": {
+                                          "dimension": "spatialY",
+                                          "candidates": [
+                                            {
+                                              "dimension": "spatialY",
+                                              "steps": 2
+                                            }
+                                          ],
+                                          "at": "2026-11-14T07:45:23.923Z"
+                                        },
+                                        "evidence": {
+                                          "queried": true,
+                                          "truncated": true,
+                                          "returned": 3,
+                                          "lowerBound": 4,
+                                          "attempts": 1,
+                                          "requests": 1,
+                                          "addedRecords": [],
+                                          "duplicateRecords": 0,
+                                          "reason": null,
+                                          "detail": null,
+                                          "queriedAt": "2026-11-14T07:45:23.923Z",
+                                          "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+                                        },
+                                        "children": [
+                                          {
+                                            "id": "root.0.0.0.0.1.1.1.0.1.0",
+                                            "snapshot": "plot-2",
+                                            "bounds": {
+                                              "xmin": 0.75,
+                                              "xmax": 1,
+                                              "ymin": 0.5,
+                                              "ymax": 0.75,
+                                              "from": 2,
+                                              "until": 3
+                                            },
+                                            "status": "complete",
+                                            "split": null,
+                                            "evidence": {
+                                              "queried": true,
+                                              "truncated": false,
+                                              "returned": 0,
+                                              "lowerBound": 0,
+                                              "attempts": 1,
+                                              "requests": 1,
+                                              "addedRecords": [],
+                                              "duplicateRecords": 0,
+                                              "reason": null,
+                                              "detail": null,
+                                              "queriedAt": "2026-11-14T07:45:23.925Z"
+                                            },
+                                            "children": []
+                                          },
+                                          {
+                                            "id": "root.0.0.0.0.1.1.1.0.1.1",
+                                            "snapshot": "plot-2",
+                                            "bounds": {
+                                              "xmin": 0.75,
+                                              "xmax": 1,
+                                              "ymin": 0.75,
+                                              "ymax": 1,
+                                              "from": 2,
+                                              "until": 3
+                                            },
+                                            "status": "incomplete",
+                                            "split": {
+                                              "dimension": null,
+                                              "candidates": [],
+                                              "reason": "at-minimum-precision",
+                                              "at": "2026-11-14T07:45:23.927Z"
+                                            },
+                                            "evidence": {
+                                              "queried": true,
+                                              "truncated": true,
+                                              "returned": 3,
+                                              "lowerBound": 4,
+                                              "attempts": 1,
+                                              "requests": 1,
+                                              "addedRecords": [],
+                                              "duplicateRecords": 0,
+                                              "reason": "min-granularity-truncated",
+                                              "detail": "达到 minSpatial=0.25 与 minTemporal=1 后仍截断：返回 3 条，下界 4；该区域无法证明完整。",
+                                              "queriedAt": "2026-11-14T07:45:23.927Z",
+                                              "partialIds": [
+                                                "HOT-0",
+                                                "HOT-1",
+                                                "HOT-2"
+                                              ]
+                                            },
+                                            "children": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "root.0.0.0.0.1.1.1.1",
+                                    "snapshot": "plot-2",
+                                    "bounds": {
+                                      "xmin": 0.5,
+                                      "xmax": 1,
+                                      "ymin": 0.5,
+                                      "ymax": 1,
+                                      "from": 3,
+                                      "until": 4
+                                    },
+                                    "status": "complete",
+                                    "split": null,
+                                    "evidence": {
+                                      "queried": true,
+                                      "truncated": false,
+                                      "returned": 0,
+                                      "lowerBound": 0,
+                                      "attempts": 1,
+                                      "requests": 1,
+                                      "addedRecords": [],
+                                      "duplicateRecords": 0,
+                                      "reason": null,
+                                      "detail": null,
+                                      "queriedAt": "2026-11-14T07:45:23.931Z"
+                                    },
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "root.0.0.0.1",
+                    "snapshot": "plot-2",
+                    "bounds": {
+                      "xmin": 0,
+                      "xmax": 1,
+                      "ymin": 1,
+                      "ymax": 2,
+                      "from": 0,
+                      "until": 4
+                    },
+                    "status": "split",
+                    "split": {
+                      "dimension": "temporal",
+                      "candidates": [
+                        {
+                          "dimension": "temporal",
+                          "steps": 4
+                        },
+                        {
+                          "dimension": "spatialX",
+                          "steps": 4
+                        },
+                        {
+                          "dimension": "spatialY",
+                          "steps": 4
+                        }
+                      ],
+                      "at": "2026-11-14T07:45:23.932Z"
+                    },
+                    "evidence": {
+                      "queried": true,
+                      "truncated": true,
+                      "returned": 3,
+                      "lowerBound": 4,
+                      "attempts": 1,
+                      "requests": 1,
+                      "addedRecords": [],
+                      "duplicateRecords": 0,
+                      "reason": null,
+                      "detail": null,
+                      "queriedAt": "2026-11-14T07:45:23.932Z",
+                      "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+                    },
+                    "children": [
+                      {
+                        "id": "root.0.0.0.1.0",
+                        "snapshot": "plot-2",
+                        "bounds": {
+                          "xmin": 0,
+                          "xmax": 1,
+                          "ymin": 1,
+                          "ymax": 2,
+                          "from": 0,
+                          "until": 2
+                        },
+                        "status": "split",
+                        "split": {
+                          "dimension": "spatialX",
+                          "candidates": [
+                            {
+                              "dimension": "spatialX",
+                              "steps": 4
+                            },
+                            {
+                              "dimension": "spatialY",
+                              "steps": 4
+                            },
+                            {
+                              "dimension": "temporal",
+                              "steps": 2
+                            }
+                          ],
+                          "at": "2026-11-14T07:45:23.935Z"
+                        },
+                        "evidence": {
+                          "queried": true,
+                          "truncated": true,
+                          "returned": 3,
+                          "lowerBound": 4,
+                          "attempts": 1,
+                          "requests": 1,
+                          "addedRecords": [],
+                          "duplicateRecords": 0,
+                          "reason": null,
+                          "detail": null,
+                          "queriedAt": "2026-11-14T07:45:23.935Z",
+                          "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+                        },
+                        "children": [
+                          {
+                            "id": "root.0.0.0.1.0.0",
+                            "snapshot": "plot-2",
+                            "bounds": {
+                              "xmin": 0,
+                              "xmax": 0.5,
+                              "ymin": 1,
+                              "ymax": 2,
+                              "from": 0,
+                              "until": 2
+                            },
+                            "status": "complete",
+                            "split": null,
+                            "evidence": {
+                              "queried": true,
+                              "truncated": false,
+                              "returned": 1,
+                              "lowerBound": 1,
+                              "attempts": 1,
+                              "requests": 1,
+                              "addedRecords": [
+                                "OBS-12"
+                              ],
+                              "duplicateRecords": 0,
+                              "reason": null,
+                              "detail": null,
+                              "queriedAt": "2026-11-14T07:45:23.937Z"
+                            },
+                            "children": []
+                          },
+                          {
+                            "id": "root.0.0.0.1.0.1",
+                            "snapshot": "plot-2",
+                            "bounds": {
+                              "xmin": 0.5,
+                              "xmax": 1,
+                              "ymin": 1,
+                              "ymax": 2,
+                              "from": 0,
+                              "until": 2
+                            },
+                            "status": "split",
+                            "split": {
+                              "dimension": "spatialY",
+                              "candidates": [
+                                {
+                                  "dimension": "spatialY",
+                                  "steps": 4
+                                },
+                                {
+                                  "dimension": "temporal",
+                                  "steps": 2
+                                },
+                                {
+                                  "dimension": "spatialX",
+                                  "steps": 2
+                                }
+                              ],
+                              "at": "2026-11-14T07:45:23.939Z"
+                            },
+                            "evidence": {
+                              "queried": true,
+                              "truncated": true,
+                              "returned": 3,
+                              "lowerBound": 4,
+                              "attempts": 1,
+                              "requests": 1,
+                              "addedRecords": [],
+                              "duplicateRecords": 0,
+                              "reason": null,
+                              "detail": null,
+                              "queriedAt": "2026-11-14T07:45:23.939Z",
+                              "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+                            },
+                            "children": [
+                              {
+                                "id": "root.0.0.0.1.0.1.0",
+                                "snapshot": "plot-2",
+                                "bounds": {
+                                  "xmin": 0.5,
+                                  "xmax": 1,
+                                  "ymin": 1,
+                                  "ymax": 1.5,
+                                  "from": 0,
+                                  "until": 2
+                                },
+                                "status": "split",
+                                "split": {
+                                  "dimension": "temporal",
+                                  "candidates": [
+                                    {
+                                      "dimension": "temporal",
+                                      "steps": 2
+                                    },
+                                    {
+                                      "dimension": "spatialX",
+                                      "steps": 2
+                                    },
+                                    {
+                                      "dimension": "spatialY",
+                                      "steps": 2
+                                    }
+                                  ],
+                                  "at": "2026-11-14T07:45:23.942Z"
+                                },
+                                "evidence": {
+                                  "queried": true,
+                                  "truncated": true,
+                                  "returned": 3,
+                                  "lowerBound": 4,
+                                  "attempts": 1,
+                                  "requests": 1,
+                                  "addedRecords": [],
+                                  "duplicateRecords": 0,
+                                  "reason": null,
+                                  "detail": null,
+                                  "queriedAt": "2026-11-14T07:45:23.942Z",
+                                  "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+                                },
+                                "children": [
+                                  {
+                                    "id": "root.0.0.0.1.0.1.0.0",
+                                    "snapshot": "plot-2",
+                                    "bounds": {
+                                      "xmin": 0.5,
+                                      "xmax": 1,
+                                      "ymin": 1,
+                                      "ymax": 1.5,
+                                      "from": 0,
+                                      "until": 1
+                                    },
+                                    "status": "complete",
+                                    "split": null,
+                                    "evidence": {
+                                      "queried": true,
+                                      "truncated": false,
+                                      "returned": 0,
+                                      "lowerBound": 0,
+                                      "attempts": 1,
+                                      "requests": 1,
+                                      "addedRecords": [],
+                                      "duplicateRecords": 0,
+                                      "reason": null,
+                                      "detail": null,
+                                      "queriedAt": "2026-11-14T07:45:23.944Z"
+                                    },
+                                    "children": []
+                                  },
+                                  {
+                                    "id": "root.0.0.0.1.0.1.0.1",
+                                    "snapshot": "plot-2",
+                                    "bounds": {
+                                      "xmin": 0.5,
+                                      "xmax": 1,
+                                      "ymin": 1,
+                                      "ymax": 1.5,
+                                      "from": 1,
+                                      "until": 2
+                                    },
+                                    "status": "split",
+                                    "split": {
+                                      "dimension": "spatialX",
+                                      "candidates": [
+                                        {
+                                          "dimension": "spatialX",
+                                          "steps": 2
+                                        },
+                                        {
+                                          "dimension": "spatialY",
+                                          "steps": 2
+                                        }
+                                      ],
+                                      "at": "2026-11-14T07:45:23.946Z"
+                                    },
+                                    "evidence": {
+                                      "queried": true,
+                                      "truncated": true,
+                                      "returned": 3,
+                                      "lowerBound": 4,
+                                      "attempts": 1,
+                                      "requests": 1,
+                                      "addedRecords": [],
+                                      "duplicateRecords": 0,
+                                      "reason": null,
+                                      "detail": null,
+                                      "queriedAt": "2026-11-14T07:45:23.946Z",
+                                      "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+                                    },
+                                    "children": [
+                                      {
+                                        "id": "root.0.0.0.1.0.1.0.1.0",
+                                        "snapshot": "plot-2",
+                                        "bounds": {
+                                          "xmin": 0.5,
+                                          "xmax": 0.75,
+                                          "ymin": 1,
+                                          "ymax": 1.5,
+                                          "from": 1,
+                                          "until": 2
+                                        },
+                                        "status": "complete",
+                                        "split": null,
+                                        "evidence": {
+                                          "queried": true,
+                                          "truncated": false,
+                                          "returned": 0,
+                                          "lowerBound": 0,
+                                          "attempts": 1,
+                                          "requests": 1,
+                                          "addedRecords": [],
+                                          "duplicateRecords": 0,
+                                          "reason": null,
+                                          "detail": null,
+                                          "queriedAt": "2026-11-14T07:45:23.949Z"
+                                        },
+                                        "children": []
+                                      },
+                                      {
+                                        "id": "root.0.0.0.1.0.1.0.1.1",
+                                        "snapshot": "plot-2",
+                                        "bounds": {
+                                          "xmin": 0.75,
+                                          "xmax": 1,
+                                          "ymin": 1,
+                                          "ymax": 1.5,
+                                          "from": 1,
+                                          "until": 2
+                                        },
+                                        "status": "split",
+                                        "split": {
+                                          "dimension": "spatialY",
+                                          "candidates": [
+                                            {
+                                              "dimension": "spatialY",
+                                              "steps": 2
+                                            }
+                                          ],
+                                          "at": "2026-11-14T07:45:23.951Z"
+                                        },
+                                        "evidence": {
+                                          "queried": true,
+                                          "truncated": true,
+                                          "returned": 3,
+                                          "lowerBound": 4,
+                                          "attempts": 1,
+                                          "requests": 1,
+                                          "addedRecords": [],
+                                          "duplicateRecords": 0,
+                                          "reason": null,
+                                          "detail": null,
+                                          "queriedAt": "2026-11-14T07:45:23.951Z",
+                                          "note": "截断响应只是任意前缀，未入账；由子区重新查询并按 id 去重。"
+                                        },
+                                        "children": [
+                                          {
+                                            "id": "root.0.0.0.1.0.1.0.1.1.0",
+                                            "snapshot": "plot-2",
+                                            "bounds": {
+                                              "xmin": 0.75,
+                                              "xmax": 1,
+                                              "ymin": 1,
+                                              "ymax": 1.25,
+                                              "from": 1,
+                                              "until": 2
+                                            },
+                                            "status": "incomplete",
+                                            "split": {
+                                              "dimension": null,
+                                              "candidates": [],
+                                              "reason": "at-minimum-precision",
+                                              "at": "2026-11-14T07:45:23.954Z"
+                                            },
+                                            "evidence": {
+                                              "queried": true,
+                                              "truncated": true,
+                                              "returned": 3,
+                                              "lowerBound": 4,
+                                              "attempts": 1,
+                                              "requests": 1,
+                                              "addedRecords": [],
+                                              "duplicateRecords": 0,
+                                              "reason": "min-granularity-truncated",
+                                              "detail": "达到 minSpatial=0.25 与 minTemporal=1 后仍截断：返回 3 条，下界 4；该区域无法证明完整。",
+                                              "queriedAt": "2026-11-14T07:45:23.954Z",
+                                              "partialIds": [
+                                                "HOT-0",
+                                                "HOT-1",
+                                                "HOT-2"
+                                              ]
+                                            },
+                                            "children": []
+                                          },
+                                          {
+                                            "id": "root.0.0.0.1.0.1.0.1.1.1",
+                                            "snapshot": "plot-2",
+                                            "bounds": {
+                                              "xmin": 0.75,
+                                              "xmax": 1,
+                                              "ymin": 1.25,
+                                              "ymax": 1.5,
+                                              "from": 1,
+                                              "until": 2
+                                            },
+                                            "status": "complete",
+                                            "split": null,
+                                            "evidence": {
+                                              "queried": true,
+                                              "truncated": false,
+                                              "returned": 0,
+                                              "lowerBound": 0,
+                                              "attempts": 1,
+                                              "requests": 1,
+                                              "addedRecords": [],
+                                              "duplicateRecords": 0,
+                                              "reason": null,
+                                              "detail": null,
+                                              "queriedAt": "2026-11-14T07:45:23.956Z"
+                                            },
+                                            "children": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "root.0.0.0.1.0.1.1",
+                                "snapshot": "plot-2",
+                                "bounds": {
+                                  "xmin": 0.5,
+                                  "xmax": 1,
+                                  "ymin": 1.5,
+                                  "ymax": 2,
+                                  "from": 0,
+                                  "until": 2
+                                },
+                                "status": "complete",
+                                "split": null,
+                                "evidence": {
+                                  "queried": true,
+                                  "truncated": false,
+                                  "returned": 0,
+                                  "lowerBound": 0,
+                                  "attempts": 1,
+                                  "requests": 1,
+                                  "addedRecords": [],
+                                  "duplicateRecords": 0,
+                                  "reason": null,
+                                  "detail": null,
+                                  "queriedAt": "2026-11-14T07:45:23.959Z"
+                                },
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "root.0.0.0.1.1",
+                        "snapshot": "plot-2",
+                        "bounds": {
+                          "xmin": 0,
+                          "xmax": 1,
+                          "ymin": 1,
+                          "ymax": 2,
+                          "from": 2,
+                          "until": 4
+                        },
+                        "status": "pending",
+                        "split": null,
+                        "evidence": {
+                          "queried": false,
+                          "truncated": null,
+                          "returned": 0,
+                          "lowerBound": null,
+                          "attempts": 0,
+                          "requests": 0,
+                          "reason": "budget-exhausted",
+                          "detail": {
+                            "message": "未被查询，预算已耗尽；可按同一快照续跑"
+                          }
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "root.0.0.1",
+                "snapshot": "plot-2",
+                "bounds": {
+                  "xmin": 1,
+                  "xmax": 2,
+                  "ymin": 0,
+                  "ymax": 2,
+                  "from": 0,
+                  "until": 4
+                },
+                "status": "pending",
+                "split": null,
+                "evidence": {
+                  "queried": false,
+                  "truncated": null,
+                  "returned": 0,
+                  "lowerBound": null,
+                  "attempts": 0,
+                  "requests": 0,
+                  "reason": "budget-exhausted",
+                  "detail": {
+                    "message": "未被查询，预算已耗尽；可按同一快照续跑"
+                  }
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "root.0.1",
+            "snapshot": "plot-2",
+            "bounds": {
+              "xmin": 0,
+              "xmax": 2,
+              "ymin": 2,
+              "ymax": 4,
+              "from": 0,
+              "until": 4
+            },
+            "status": "pending",
+            "split": null,
+            "evidence": {
+              "queried": false,
+              "truncated": null,
+              "returned": 0,
+              "lowerBound": null,
+              "attempts": 0,
+              "requests": 0,
+              "reason": "budget-exhausted",
+              "detail": {
+                "message": "未被查询，预算已耗尽；可按同一快照续跑"
+              }
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "root.1",
+        "snapshot": "plot-2",
+        "bounds": {
+          "xmin": 2,
+          "xmax": 4,
+          "ymin": 0,
+          "ymax": 4,
+          "from": 0,
+          "until": 4
+        },
+        "status": "pending",
+        "split": null,
+        "evidence": {
+          "queried": false,
+          "truncated": null,
+          "returned": 0,
+          "lowerBound": null,
+          "attempts": 0,
+          "requests": 0,
+          "reason": "budget-exhausted",
+          "detail": {
+            "message": "未被查询，预算已耗尽；可按同一快照续跑"
+          }
+        },
+        "children": []
+      }
+    ]
+  },
+  "startedAt": "2026-11-14T07:45:23.886Z",
+  "updatedAt": "2026-11-14T07:45:23.960Z",
+  "lastAttempt": {
+    "path": "/query?xmin=0.5&xmax=1&ymin=1.5&ymax=2&from=0&until=2",
+    "at": "2026-11-14T07:45:23.957Z",
+    "used": 40,
+    "budget": 40
+  },
+  "resumed": false,
+  "completedLeavesBeforeRun": 0,
+  "pendingLeavesBeforeRun": 1,
+  "base": "http://127.0.0.1:41389",
+  "duplicateRecords": 0,
+  "stopDetail": {
+    "message": "请求预算耗尽，待办叶子保留在覆盖树中",
+    "used": 40,
+    "budget": 40,
+    "pending": 4
+  }
+}

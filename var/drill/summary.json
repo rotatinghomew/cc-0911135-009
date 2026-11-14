@@ -1,0 +1,479 @@
+{
+  "defaultCap": {
+    "snapshot": "plot-1",
+    "complete": false,
+    "claimedComplete": false,
+    "snapshotValid": true,
+    "stopReason": "incomplete",
+    "budget": 400,
+    "requestsUsed": 120,
+    "uniqueRecords": 18,
+    "duplicateHits": 15,
+    "leaves": {
+      "total": 60,
+      "complete": 52,
+      "pending": 0,
+      "incomplete": 8,
+      "blocked": 0
+    },
+    "leafEvidenceConsistent": true,
+    "splitDecisions": [
+      {
+        "id": "root",
+        "bounds": {
+          "xmin": 0,
+          "xmax": 4,
+          "ymin": 0,
+          "ymax": 4,
+          "from": 0,
+          "until": 4
+        },
+        "dimension": "spatialX",
+        "candidates": [
+          {
+            "dimension": "spatialX",
+            "steps": 16
+          },
+          {
+            "dimension": "spatialY",
+            "steps": 16
+          },
+          {
+            "dimension": "temporal",
+            "steps": 4
+          }
+        ]
+      },
+      {
+        "id": "root.0",
+        "bounds": {
+          "xmin": 0,
+          "xmax": 2,
+          "ymin": 0,
+          "ymax": 4,
+          "from": 0,
+          "until": 4
+        },
+        "dimension": "spatialY",
+        "candidates": [
+          {
+            "dimension": "spatialY",
+            "steps": 16
+          },
+          {
+            "dimension": "spatialX",
+            "steps": 8
+          },
+          {
+            "dimension": "temporal",
+            "steps": 4
+          }
+        ]
+      },
+      {
+        "id": "root.0.0",
+        "bounds": {
+          "xmin": 0,
+          "xmax": 2,
+          "ymin": 0,
+          "ymax": 2,
+          "from": 0,
+          "until": 4
+        },
+        "dimension": "spatialX",
+        "candidates": [
+          {
+            "dimension": "spatialX",
+            "steps": 8
+          },
+          {
+            "dimension": "spatialY",
+            "steps": 8
+          },
+          {
+            "dimension": "temporal",
+            "steps": 4
+          }
+        ]
+      },
+      {
+        "id": "root.0.0.0",
+        "bounds": {
+          "xmin": 0,
+          "xmax": 1,
+          "ymin": 0,
+          "ymax": 2,
+          "from": 0,
+          "until": 4
+        },
+        "dimension": "spatialY",
+        "candidates": [
+          {
+            "dimension": "spatialY",
+            "steps": 8
+          },
+          {
+            "dimension": "temporal",
+            "steps": 4
+          },
+          {
+            "dimension": "spatialX",
+            "steps": 4
+          }
+        ]
+      },
+      {
+        "id": "root.0.0.0.0",
+        "bounds": {
+          "xmin": 0,
+          "xmax": 1,
+          "ymin": 0,
+          "ymax": 1,
+          "from": 0,
+          "until": 4
+        },
+        "dimension": "temporal",
+        "candidates": [
+          {
+            "dimension": "temporal",
+            "steps": 4
+          },
+          {
+            "dimension": "spatialX",
+            "steps": 4
+          },
+          {
+            "dimension": "spatialY",
+            "steps": 4
+          }
+        ]
+      },
+      {
+        "id": "root.0.0.0.0.0",
+        "bounds": {
+          "xmin": 0,
+          "xmax": 1,
+          "ymin": 0,
+          "ymax": 1,
+          "from": 0,
+          "until": 2
+        },
+        "dimension": "spatialX",
+        "candidates": [
+          {
+            "dimension": "spatialX",
+            "steps": 4
+          },
+          {
+            "dimension": "spatialY",
+            "steps": 4
+          },
+          {
+            "dimension": "temporal",
+            "steps": 2
+          }
+        ]
+      }
+    ],
+    "hotspots": [
+      {
+        "bounds": {
+          "xmin": 0.75,
+          "xmax": 1,
+          "ymin": 0.75,
+          "ymax": 1,
+          "from": 1,
+          "until": 2
+        },
+        "status": "incomplete",
+        "code": "hotspot-unresolvable",
+        "detail": "达到 minSpatial=0.25 与 minTemporal=1 后仍截断：返回 3 条，下界 4；该区域无法证明完整。"
+      },
+      {
+        "bounds": {
+          "xmin": 0.75,
+          "xmax": 1,
+          "ymin": 0.75,
+          "ymax": 1,
+          "from": 2,
+          "until": 3
+        },
+        "status": "incomplete",
+        "code": "hotspot-unresolvable",
+        "detail": "达到 minSpatial=0.25 与 minTemporal=1 后仍截断：返回 3 条，下界 4；该区域无法证明完整。"
+      },
+      {
+        "bounds": {
+          "xmin": 0.75,
+          "xmax": 1,
+          "ymin": 1,
+          "ymax": 1.25,
+          "from": 1,
+          "until": 2
+        },
+        "status": "incomplete",
+        "code": "hotspot-unresolvable",
+        "detail": "达到 minSpatial=0.25 与 minTemporal=1 后仍截断：返回 3 条，下界 4；该区域无法证明完整。"
+      },
+      {
+        "bounds": {
+          "xmin": 0.75,
+          "xmax": 1,
+          "ymin": 1,
+          "ymax": 1.25,
+          "from": 2,
+          "until": 3
+        },
+        "status": "incomplete",
+        "code": "hotspot-unresolvable",
+        "detail": "达到 minSpatial=0.25 与 minTemporal=1 后仍截断：返回 3 条，下界 4；该区域无法证明完整。"
+      },
+      {
+        "bounds": {
+          "xmin": 1,
+          "xmax": 1.25,
+          "ymin": 0.75,
+          "ymax": 1,
+          "from": 1,
+          "until": 2
+        },
+        "status": "incomplete",
+        "code": "hotspot-unresolvable",
+        "detail": "达到 minSpatial=0.25 与 minTemporal=1 后仍截断：返回 3 条，下界 4；该区域无法证明完整。"
+      },
+      {
+        "bounds": {
+          "xmin": 1,
+          "xmax": 1.25,
+          "ymin": 0.75,
+          "ymax": 1,
+          "from": 2,
+          "until": 3
+        },
+        "status": "incomplete",
+        "code": "hotspot-unresolvable",
+        "detail": "达到 minSpatial=0.25 与 minTemporal=1 后仍截断：返回 3 条，下界 4；该区域无法证明完整。"
+      },
+      {
+        "bounds": {
+          "xmin": 1,
+          "xmax": 1.25,
+          "ymin": 1,
+          "ymax": 1.25,
+          "from": 1,
+          "until": 2
+        },
+        "status": "incomplete",
+        "code": "hotspot-unresolvable",
+        "detail": "达到 minSpatial=0.25 与 minTemporal=1 后仍截断：返回 3 条，下界 4；该区域无法证明完整。"
+      },
+      {
+        "bounds": {
+          "xmin": 1,
+          "xmax": 1.25,
+          "ymin": 1,
+          "ymax": 1.25,
+          "from": 2,
+          "until": 3
+        },
+        "status": "incomplete",
+        "code": "hotspot-unresolvable",
+        "detail": "达到 minSpatial=0.25 与 minTemporal=1 后仍截断：返回 3 条，下界 4；该区域无法证明完整。"
+      }
+    ],
+    "boundaryRecords": [
+      {
+        "id": "OBS-00",
+        "x": 0,
+        "y": 0,
+        "time": 0,
+        "value": 0.1
+      },
+      {
+        "id": "OBS-02",
+        "x": 4,
+        "y": 0,
+        "time": 2,
+        "value": 2.1
+      },
+      {
+        "id": "OBS-06",
+        "x": 0,
+        "y": 4,
+        "time": 1,
+        "value": 6.1
+      },
+      {
+        "id": "OBS-08",
+        "x": 4,
+        "y": 4,
+        "time": 3,
+        "value": 8.1
+      },
+      {
+        "id": "OBS-09",
+        "x": 0,
+        "y": 0,
+        "time": 4,
+        "value": 9.1
+      },
+      {
+        "id": "OBS-17",
+        "x": 4,
+        "y": 4,
+        "time": 2,
+        "value": 17.1
+      }
+    ],
+    "treeSample": [
+      "  root.0 split split=spatialY truncated=true returned=3 {\"xmin\":0,\"xmax\":2,\"ymin\":0,\"ymax\":4,\"from\":0,\"until\":4}",
+      "    root.0.0 split split=spatialX truncated=true returned=3 {\"xmin\":0,\"xmax\":2,\"ymin\":0,\"ymax\":2,\"from\":0,\"until\":4}",
+      "                    root.0.0.0.0.0.1.1.1.1.1 incomplete (at-minimum-precision) truncated=true returned=3 {\"xmin\":0.75,\"xmax\":1,\"ymin\":0.75,\"ymax\":1,\"from\":1,\"until\":2}",
+      "                    root.0.0.0.0.1.1.1.0.1.1 incomplete (at-minimum-precision) truncated=true returned=3 {\"xmin\":0.75,\"xmax\":1,\"ymin\":0.75,\"ymax\":1,\"from\":2,\"until\":3}",
+      "                    root.0.0.0.1.0.1.0.1.1.0 incomplete (at-minimum-precision) truncated=true returned=3 {\"xmin\":0.75,\"xmax\":1,\"ymin\":1,\"ymax\":1.25,\"from\":1,\"until\":2}",
+      "                    root.0.0.0.1.1.1.0.0.1.0 incomplete (at-minimum-precision) truncated=true returned=3 {\"xmin\":0.75,\"xmax\":1,\"ymin\":1,\"ymax\":1.25,\"from\":2,\"until\":3}",
+      "                    root.0.0.1.0.0.0.1.1.0.1 incomplete (at-minimum-precision) truncated=true returned=3 {\"xmin\":1,\"xmax\":1.25,\"ymin\":0.75,\"ymax\":1,\"from\":1,\"until\":2}",
+      "                    root.0.0.1.0.1.0.1.0.0.1 incomplete (at-minimum-precision) truncated=true returned=3 {\"xmin\":1,\"xmax\":1.25,\"ymin\":0.75,\"ymax\":1,\"from\":2,\"until\":3}",
+      "                    root.0.0.1.1.0.0.0.1.0.0 incomplete (at-minimum-precision) truncated=true returned=3 {\"xmin\":1,\"xmax\":1.25,\"ymin\":1,\"ymax\":1.25,\"from\":1,\"until\":2}",
+      "                    root.0.0.1.1.1.0.0.0.0.0 incomplete (at-minimum-precision) truncated=true returned=3 {\"xmin\":1,\"xmax\":1.25,\"ymin\":1,\"ymax\":1.25,\"from\":2,\"until\":3}",
+      "    root.0.1 split split=spatialX truncated=true returned=3 {\"xmin\":0,\"xmax\":2,\"ymin\":2,\"ymax\":4,\"from\":0,\"until\":4}",
+      "  root.1 split split=spatialY truncated=true returned=3 {\"xmin\":2,\"xmax\":4,\"ymin\":0,\"ymax\":4,\"from\":0,\"until\":4}",
+      "    root.1.0 split split=spatialX truncated=true returned=3 {\"xmin\":2,\"xmax\":4,\"ymin\":0,\"ymax\":2,\"from\":0,\"until\":4}",
+      "    root.1.1 split split=spatialX truncated=true returned=3 {\"xmin\":2,\"xmax\":4,\"ymin\":2,\"ymax\":4,\"from\":0,\"until\":4}"
+    ]
+  },
+  "generousCap": {
+    "snapshot": "plot-1",
+    "complete": true,
+    "claimedComplete": true,
+    "snapshotValid": true,
+    "stopReason": "complete",
+    "budget": 40,
+    "requestsUsed": 2,
+    "uniqueRecords": 23,
+    "duplicateHits": 0,
+    "leaves": {
+      "total": 1,
+      "complete": 1,
+      "pending": 0,
+      "incomplete": 0,
+      "blocked": 0
+    },
+    "leafEvidenceConsistent": true
+  },
+  "resume": {
+    "first": {
+      "snapshot": "plot-1",
+      "complete": false,
+      "claimedComplete": false,
+      "snapshotValid": true,
+      "stopReason": "budget-exhausted",
+      "budget": 20,
+      "requestsUsed": 20,
+      "uniqueRecords": 2,
+      "duplicateHits": 0,
+      "leaves": {
+        "total": 13,
+        "complete": 6,
+        "pending": 6,
+        "incomplete": 1,
+        "blocked": 0
+      },
+      "leafEvidenceConsistent": true
+    },
+    "second": {
+      "snapshot": "plot-1",
+      "complete": false,
+      "claimedComplete": false,
+      "snapshotValid": true,
+      "stopReason": "incomplete",
+      "budget": 400,
+      "requestsUsed": 120,
+      "uniqueRecords": 18,
+      "duplicateHits": 15,
+      "leaves": {
+        "total": 60,
+        "complete": 52,
+        "pending": 0,
+        "incomplete": 8,
+        "blocked": 0
+      },
+      "leafEvidenceConsistent": true
+    },
+    "completedLeavesBeforeResume": 6,
+    "queriesAfterResume": 100,
+    "pendingBeforeResume": 6
+  },
+  "expired": {
+    "before": {
+      "snapshot": "plot-1",
+      "complete": false,
+      "claimedComplete": false,
+      "snapshotValid": true,
+      "stopReason": "budget-exhausted",
+      "budget": 25,
+      "requestsUsed": 25,
+      "uniqueRecords": 2,
+      "duplicateHits": 0,
+      "leaves": {
+        "total": 16,
+        "complete": 8,
+        "pending": 7,
+        "incomplete": 1,
+        "blocked": 0
+      },
+      "leafEvidenceConsistent": true
+    },
+    "expired": {
+      "snapshot": "plot-1",
+      "complete": false,
+      "claimedComplete": false,
+      "snapshotValid": false,
+      "stopReason": "snapshot-expired",
+      "budget": 400,
+      "requestsUsed": 26,
+      "uniqueRecords": 2,
+      "duplicateHits": 0,
+      "leaves": {
+        "total": 16,
+        "complete": 8,
+        "pending": 6,
+        "incomplete": 1,
+        "blocked": 1
+      },
+      "leafEvidenceConsistent": true
+    },
+    "completedLeavesBeforeExpiry": 8,
+    "freshGeneration": {
+      "snapshot": "plot-2",
+      "complete": false,
+      "claimedComplete": false,
+      "snapshotValid": true,
+      "stopReason": "budget-exhausted",
+      "budget": 40,
+      "requestsUsed": 40,
+      "uniqueRecords": 3,
+      "duplicateHits": 0,
+      "leaves": {
+        "total": 22,
+        "complete": 15,
+        "pending": 4,
+        "incomplete": 3,
+        "blocked": 0
+      },
+      "leafEvidenceConsistent": true
+    }
+  },
+  "persisted": {
+    "file": "/workspace/var/drill/default-cap/coverage.json",
+    "complete": false,
+    "leaves": {
+      "total": 60,
+      "complete": 52,
+      "pending": 0,
+      "incomplete": 8,
+      "blocked": 0
+    },
+    "records": 18
+  }
+}
